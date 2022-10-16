@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="portfolio of a web developer who knows - html, css, js , py">
+    <meta name="author" content="Alman Ahmed">
+    <title>Alman Ahmed's Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <script src="portfolio.js" type="module" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="apple-touch-icon" href="icon.jpg">
+</head>
+<body class="home"> 
+
+    <div id="loading-scr"></div>
+    
+<header class="primary-header flex">
+    
+    <div class="canvas-container">
+        <canvas id="canv" width="32" height="32"></canvas>
+    </div>
+    <a  class="skip-link"href="#main-content">skip to main content</a>
+    <div class="logo" id="logo"><img src="a.png" alt=""></div>
+    <!--navigation bar-->
+    <button class="mobile-nav-toggle"
+    aria-controls="primary-navigation" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+    </button>        
+        <nav>
+            <ul id="primary-navigation"data-visible="false"class="primary-navigation flex">
+   
+            <li class="active" id="link">
+                    <a href="#logo">
+                        <span aria-hidden="true">00</span>{home}
+                    </a>
+                </li>
+                <!--second button-->
+                <li id="link">
+                    <a href="#contact">
+                        <span aria-hidden="true">01</span>{contact}
+                    </a>
+                </li>
+                 <!--third button-->
+                 <li id="link">
+                    <a href="#projects">
+                        <span aria-hidden="true">02</span>{projects}
+                    </a>
+                </li>
+                <!--third button-->
+                <li id="link">
+                    <a href="#about-me">
+                        <span aria-hidden="true">03</span>{about-me}
+                    </a>
+                </li>
+            </li>
+            </ul>  
+        </nav>
+    </div>
+</header>
+
+    <!--content-->
+    <main id="main-content">
+<div class="hero">
+        <div class="container">
+            <h4 class="semi-hero-title">Hi, My name is</h4>
+            <h1 class="head1 hero-title">Alman Ahmed.<br> I am a front end developer </h1>
+            <p class="subtitle hero-title">I help to create responsive websites for <br> buisnesses and also help manage developed websites</p>
+            <p aria-hidden="true" class="hero-title" data-attribute="overlay"></p>
+            <p aria-hidden="true" class="head1 hero-title" data-attribute="overlay"></p>
+            <p ria-hidden="true"  data-attribute="overlay"class="subtitle hero-title"></p>
+            
+        </div>
+</div>
+    <!--About me-->
+<div class="aboutme" id="about-me">
+        <h2 class="aboutme-h2">Who am I ?<span class="underline"></span></h2>
+            <p class="aboutme-p1">
+                I am a self thought web developer.
+                <br>I have a passion for coding and challenging myself for creativity always.
+                <br>Using Html, Css & Js, I create simple responsive
+                <br>website with a twist!
+            </p>
+
+            <p class="aboutme-p2">I enjoy learning new skills daily, and stay connected.
+            <br>I also like playing football(soccer)</p>
+            <div id="box"></div>
+    <div class="skill">
+        <div class="skill-h2">
+            <h2>skills<span class="underline"></span></h2>
+        </div>
+        <div class="rotating-text">
+            <p>I understand languages like</p>
+            <p>
+                <span class="word w-1">HTML</span>
+                <span class="word w-2">Css</span>
+                <span class="word w-3">Javascript</span>
+                <span class="word w-4">python</span>
+                <span class="word w-5">C++ with Arduino</span>
+            </p>
+        </div>
+    </div>
+</div>
+
+    <!--all the thing I heve made-->
+    <h2 class="projects" id="projects">Case Study</h2>
+
+    <div class="media-scroller">
+        <!--note app-->
+        <div class="card-alignment">
+            <div class="card-one">
+                <div class="card-content">
+                    <h2 class="Card-head-One">Note app(sep-2021)</h2>
+                    <p class="card-body-one">
+                    This app was built to help me with my online school studies.  <a href="note.html" class="card-more">...more</a>
+                    </p>
+                    <a href="note.html" class="button">Demo</a>
+                    <a href="https://github.com/AlstonAlman/note-app/tree/main" class="button">view Code</a>
+                </div>
+            </div>
+            </div>
+    
+            <!--E brochure-->
+            
+            <div class="card-alignment"></div>
+            <div class="card-two">
+                <div class="card-content-two">
+                    <h2 class="Card-head-two">E brochure</h2>
+                    <p class="card-body-two">
+                        This is a brochure for a ------ company
+                    </p>
+                    <a href="#" class="button">Demo</a>
+                    <a href="=" class="button">view Code</a>
+                </div>
+            </div>
+        </div>
+            <!--* E commerce Website -->
+         <!--* app using API -->
+     </div>
+ 
+       
+
+    </div>
+    </main>
+    
+    <!--* contact and footer -->
+    <div class="contact" id="contact">
+       <form onsubmit="sendEmail(); reset(); return false;">
+        <h1 class="contact-head">Contact me</h1>
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Email id" required>
+        <input type="text" id="phone" placeholder="Phone no">
+        <textarea placeholder="How can I help you?" id="message" rows="4"></textarea>
+        <button type="submit" class="submit">Send</button>
+    </form>
+    </div>
+    <footer>
+        <p>Follow me on social media</p>
+        <ul class="wrapper">
+            <li class="icon facebook">
+              <span class="tooltip">Facebook</span>
+              <span><i class="fab fa-facebook-f"></i></span>
+            </li>
+            <li class="icon twitter">
+              <span class="tooltip">Twitter</span>
+              <span><i class="fab fa-twitter"></i></span>
+            </li>
+            <li class="icon instagram">
+              <span class="tooltip">Instagram</span>
+              <span><i class="fab fa-instagram"></i></span>
+            </li>
+            <li class="icon github">
+              <span class="tooltip">Github</span>
+              <span><i class="fab fa-github"></i></span>
+            </li>
+            </ul>
+        <p class="copyright"> Copyright 2022 Alman Portfolio</p>
+
+    </footer>
+   
+</body>
+<svg>
+    <symbol id="next" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+    </symbol>
+
+    <symbol id="previous" viewBox="0 0 256 512">
+      <path fill="white"
+        d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+    </symbol>
+  </svg>
+</html>
