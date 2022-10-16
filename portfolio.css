@@ -34,7 +34,7 @@ html{
 }
 /*Main content*/
 body{
-    margin: 0;
+    margin: 0px;
     padding: 0px;
     color: var(--light-text);
     background-color:var(--light-background);
@@ -43,7 +43,7 @@ body{
 
 h4{
     font-family:sans-serif;
-    padding: 30px;
+    padding: 0px;
     padding: 5px;
     margin-top: 150px;
     display: grid;
@@ -315,7 +315,9 @@ canvas {
 }
 
 .rotating-text p .word .letter{
-    transform-origin: center center 25px;
+    transform-origin: center center 20px;
+    margin-top: -15px;
+    margin-left: 10px;
 }
 .rotating-text p .word .letter.out{
     transform: rotateX(90deg);
