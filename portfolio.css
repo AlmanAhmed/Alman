@@ -104,17 +104,6 @@ canvas {
     height: 100%;
   }
 
-.github{
-    margin-left: 5%;
-    font-size: 20px;
-    background-color: var(--light-blue);
-    color: var(--light-background);
-    cursor: pointer;
-    display: inline-block;
-    text-decoration: none;
-    padding: 0.5em 1.25em;
-    border-radius: 0.25em;
-}
 
 .flex{
     display: flex;
@@ -348,7 +337,7 @@ canvas {
 /*project*/
 
 .projects{
-    margin-top: 350px;
+    margin-top: 260px;
     margin-left: 10px;
     color: var(--dark-text)
 }
@@ -365,7 +354,7 @@ canvas {
         padding: 10rem 0 0;
         width: 300px;
         height: 200px;
-        margin-top: 30px;
+        margin-top: -20px;
         border-radius: 0.5rem;
         overflow: hidden;
     
@@ -456,7 +445,7 @@ canvas {
         padding: 10rem 0 0;
         width: 300px;
         height: 200px;
-        margin-top: 200px;
+        margin-top: 125px;
         margin-left: 20px;
         border-radius: 0.5rem;
         overflow: hidden;
@@ -572,162 +561,46 @@ canvas {
 
 
 /*contact*/
-.contact{
-    margin-top: 200px;
-    padding: 6em 0;
-
-    background-color: var(--light-grey);
-    box-shadow: 0 0 0 1vmax var(--light-grey);
-    align-content: center;
-}
-
-form h1{
-    text-align:center;
-    margin-top:200px;
-    color:var(--light-teal);
-}
-label{
-    display: block;
-    margin-top: 1em;
-    color: dark-grey;
-}
-input,
-textarea{
-    margin-top: 5px;
-    margin-left: 10px;
-    margin-right: 10px;
-    display: block;
-    width: 100%;
-    border: 1px solid gray;
-}
-.submit {
-    margin-top: 5px;
-    display: inline-block;
-    width: auto;
-    margin-top: 1em;
-    margin-left: 10px;
-    background-color: rgb(12, 35, 243);
-    color: white;
-    font-family: sans-serif;
-    padding: .5em 1.5em;
-}
-
-.submit:hover,
-.submit:focus{
-    background-color: rgb(12, 160, 214);
-}
-
-/*footer*/
 footer{
-    background-color: var(--copyright);
-    padding: 5em 0;
-    text-align: center;
+    box-shadow: 0 0 0 10vmax black;
+    background-color: #000000;
+    margin-top: 250px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+.return-top{
+    background-color: #000000;
+    border: 2px solid #ffff;
+    border-radius: 300px;
+    background-color: transparent;
+    transition: 0.1s background-color linear, 0.1s color linear;
 
-
-
-*:focus,
-*:active {
-  outline: none !important;
-  -webkit-tap-highlight-color: transparent;
 }
-
-
-
-.wrapper {
-  display: inline-flex;
-  list-style: none;
+.return-top:hover{
+    cursor: pointer;
+    border: 2px solid rgb(0, 232, 0);
 }
-
-.wrapper .icon {
-  position: relative;
-  background: #ffffff;
-  border-radius: 50%;
-  padding: 15px;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  font-size: 18px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+.return-top a{
+    font-size: 13;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    color: #ffff;
 }
-
-.wrapper .tooltip {
-  position: absolute;
-  top: 0;
-  font-size: 14px;
-  background: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+.rainbow-divid{
+    margin-top: 50px;
+    height: 1px;
+    width: 1000px;
+    background: rgb(37,244,4);
+    background: linear-gradient(90deg, rgba(37,244,4,1) 10%, rgba(244,4,4,1) 90%);
 }
-
-.wrapper .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background: #ffffff;
-  bottom: -3px;
-  left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+.social{
+    color: white;
+    text-decoration: none;
+    word-spacing: 30px;
+    padding: 10px;
 }
-
-.wrapper .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-}
-
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
-}
-.wrapper .facebook{
-    background: url(facebook.png) no-repeat center center;
-    size: 10px;
-}
-.wrapper .facebook:hover,
-.wrapper .facebook:hover .tooltip,
-.wrapper .facebook:hover .tooltip::before {
-  background: #1877F2;
-  color: #ffffff;
-}
-
-.wrapper .twitter:hover,
-.wrapper .twitter:hover .tooltip,
-.wrapper .twitter:hover .tooltip::before {
-  background: #1DA1F2;
-  color: #ffffff;
-}
-
-.wrapper .instagram:hover,
-.wrapper .instagram:hover .tooltip,
-.wrapper .instagram:hover .tooltip::before {
-  background: #E4405F;
-  color: #ffffff;
-}
-
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background: #333333;
-  color: #ffffff;
-}
-
-
 
   /*4K responsive*/
   @media(min-width: 1600px){
@@ -763,3 +636,13 @@ footer{
         font-size: 50px;
     }  
   }
+  @media (max-width: 35em) {
+    .rotating-text{
+        font-size: 15px;
+    }
+    
+
+.rotating-text p .word .letter{
+    margin-top: -10px;
+}
+}
