@@ -562,11 +562,12 @@ canvas {
 
 /*contact*/
 footer{
-    box-shadow: 0 0 0 10vmax black;
+    box-shadow: 0 0 0 6vmax black;
     background-color: #000000;
     margin-top: 250px;
 }
 .return-top{
+    margin-left: 45%;
     background-color: #000000;
     border: 2px solid #ffff;
     border-radius: 300px;
@@ -574,32 +575,47 @@ footer{
     transition: 0.1s background-color linear, 0.1s color linear;
 
 }
+.word{
+    font-size: 13;
+    padding-top: 14px;
+    padding: 13px 26px;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 0em;
+}
 .return-top:hover{
     cursor: pointer;
     border: 2px solid rgb(0, 232, 0);
 }
 .return-top a{
-    font-size: 13;
     font-weight: 400;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     text-decoration: none;
     color: #ffff;
 }
 .rainbow-divid{
+    margin-left: 10%;
     margin-top: 50px;
     height: 1px;
-    width: 1000px;
+    width: 1250px;
     background: rgb(37,244,4);
     background: linear-gradient(90deg, rgba(37,244,4,1) 10%, rgba(244,4,4,1) 90%);
 }
 .social{
+    margin-left: 0px;
     color: white;
     text-decoration: none;
-    word-spacing: 30px;
     padding: 10px;
+}
+.twitter{
+    margin-top: 20px;
+    margin-left: 40%;
+}
+.copy{
+    margin-top: 70px;
+    margin-left: 50%;
+}
+.links{
+    margin-top: 70px;
 }
 
   /*4K responsive*/
