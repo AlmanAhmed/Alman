@@ -37,7 +37,7 @@ body{
     margin: 0px;
     padding: 0px;
     color: var(--light-text);
-    background-color:var(--light-background);
+    background-color:white;
     padding-right: 0em;
 }
 
@@ -129,7 +129,7 @@ canvas {
     list-style: none;
     padding: 0;
     margin:0;
-    position: fixed;
+    position: absolute;
     
     background:hsla(0, 0%, 100%, 0.75);
 }
@@ -354,6 +354,7 @@ canvas {
         padding: 10rem 0 0;
         width: 300px;
         height: 200px;
+        margin-left: 20px;
         margin-top: -20px;
         border-radius: 0.5rem;
         overflow: hidden;
@@ -382,6 +383,7 @@ canvas {
         height: 4px;
         left: 0;
         margin-top: 27px;
+        margin-left: 40px;
         width: 150px;
         background-color: var(--light-green);
         transform-origin: left;
@@ -436,6 +438,7 @@ canvas {
     
     .card-more{
         color: blue;
+        text-decoration: none;
     }
     
     .card-two{
@@ -474,6 +477,7 @@ canvas {
         height: 4px;
         left: 0;
         margin-top: 27px;
+        margin-left: 40px;
         width: 150px;
         background-color: var(--light-green);
         transform-origin: left;
@@ -593,10 +597,10 @@ footer{
     color: #ffff;
 }
 .rainbow-divid{
-    margin-left: 10%;
+    margin-left: 8%;
     margin-top: 50px;
     height: 1px;
-    width: 1250px;
+    width: 1280px;
     background: rgb(37,244,4);
     background: linear-gradient(90deg, rgba(37,244,4,1) 10%, rgba(244,4,4,1) 90%);
 }
@@ -617,6 +621,7 @@ footer{
 .links{
     margin-top: 70px;
 }
+
 
   /*4K responsive*/
   @media(min-width: 1600px){
@@ -659,6 +664,22 @@ footer{
     
 
 .rotating-text p .word .letter{
-    margin-top: -10px;
+    margin-top: -20px;
+}
+
+.rainbow-divid{
+    width: 280px;
+}
+.twitter{
+    margin-left: 5%;
+}
+.contact{
+    margin-left: 40%;
+}
+.return-top{
+    margin-left: 30%;
+}
+.copy{
+    margin-left: 40%;
 }
 }
